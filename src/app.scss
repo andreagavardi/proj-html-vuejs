@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap");
+@import "partials/variables";
+@import "partials/commons";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  .logo img {
+    width: 190px;
+  }
+  li {
+    display: inline-block;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    a {
+      font-size: 0.85rem;
+      text-decoration: none;
+      color: $color_Grey;
+    }
+    &:last-child a {
+      background-color: $primary_yellow;
+      padding: 0.5rem 1.5rem;
+    }
+    &:last-child a:hover {
+      background-color: $color_bgGrey;
+      color: white;
+    }
+  }
+}

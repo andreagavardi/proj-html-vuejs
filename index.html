@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+    <link rel="stylesheet" href="./dist/css/app.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Site Header -->
+        <header id="site_header">
+            <nav class="navbar container">
+                <div class="logo">
+                    <img src="./dist/img/construction_logo.png" alt="Logo Avada Construction">
+                </div>
+                <ul>
+                    <li v-for="link in navbarLinks"><a :href="link.link">{{link.linkName}} </a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--END Site Header -->
+    
+        <!--  Site Main-->
+        <main id="site_main">
+    
+    
+            <section id="jumbotron">
+    
+                <section class="banner_yellow">
+                    <!-- position absolute bottom 0 -->
+    
+                </section>
+            
+            </section>
+    
+    
+    
+        </main>
+        <!--END  Site Main-->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="./dist/js/app.js"></script>
+</body>
+</html>
