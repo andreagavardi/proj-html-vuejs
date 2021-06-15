@@ -21,7 +21,8 @@
                         <img src="./dist/img/construction_logo.png" alt="Logo Avada Construction">
                     </div>
                     <ul>
-                        <li v-for="link in navbarLinks"><a :href="link.link">{{link.linkName}} </a></li>
+                        <!-- dinamic links with VueJs -->
+                        <li v-for="link in navbarLinks" ><a :class="link.selected? 'active':''" :href="link.link">{{link.linkName}} </a></li>
                     </ul>
 
                 </div>
@@ -55,13 +56,16 @@
                 </div>
                 <!--END top-right items -->
 
-                <section class="banner_yellow">
-                    <!-- position absolute bottom 0 -->
-    
-                </section>
-            
+                
+                
             </section>
             <!--END Jumbotron -->
+            <!-- yellow banner -->
+            <section class="banner_yellow">
+                <h2>Do you have a construction project we can help with?</h2>
+                <a class="btn btn_dark"href="#">get a free quote</a>
+            </section>
+            <!--END yellow banner -->
 
     
     

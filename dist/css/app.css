@@ -31,43 +31,24 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.85rem;
 }
 
 .btn_dark {
   background-color: #31312f;
+  transition: background-color 0.3s;
+}
+.btn_dark:hover {
+  background-color: #fed23f;
+  color: #31312f;
 }
 
 .btn_yellow {
   background-color: #fed23f;
   color: #31312f;
+  transition: background-color 0.3s;
 }
-
-.navbar {
-  position: fixed;
-  top: 0;
-  background-color: white;
-  width: 100%;
-  padding: 1rem;
-}
-.navbar .logo img {
-  width: 190px;
-}
-.navbar li {
-  display: inline-block;
-  margin-left: 2rem;
-  text-transform: uppercase;
-}
-.navbar li a {
-  font-size: 0.85rem;
-  text-decoration: none;
-  color: #666665;
-}
-.navbar li:last-child a {
-  background-color: #fed23f;
-  padding: 0.5rem 1.5rem;
-}
-.navbar li:last-child a:hover {
+.btn_yellow:hover {
   background-color: #31312f;
   color: white;
 }
@@ -75,9 +56,9 @@ body {
 #jumbotron {
   position: relative;
   background-image: url(../img/home-slider-62528242.jpg);
-  height: 80vh;
+  height: 88vh;
   background-size: cover;
-  margin-top: 6rem;
+  margin-top: 8rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -98,6 +79,7 @@ body {
 }
 #jumbotron .jumbotron_links .btn {
   margin: 0.5rem;
+  letter-spacing: 2px;
 }
 #jumbotron .items {
   position: absolute;
@@ -123,4 +105,58 @@ body {
   color: #65bc7b;
   font-weight: 600;
   font-family: "Work Sans", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+  padding: 2rem 0;
+}
+.navbar .logo img {
+  width: 190px;
+}
+.navbar li {
+  display: inline-block;
+  margin-left: 2rem;
+  text-transform: uppercase;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #666665;
+}
+.navbar li a.active, .navbar li a:hover {
+  color: #fed23f;
+}
+.navbar li:last-child a {
+  background-color: #fed23f;
+  padding: 0.5rem 1.5rem;
+}
+.navbar li:last-child a:hover {
+  background-color: #31312f;
+  color: white;
+}
+
+.banner_yellow {
+  background-color: #fed23f;
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+.banner_yellow h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 150px;
+  vertical-align: middle;
+  font-size: 2rem;
+}
+.banner_yellow a {
+  position: absolute;
+  text-align: center;
+  bottom: -20px;
+  left: 45%;
+  border: 2px solid;
 }

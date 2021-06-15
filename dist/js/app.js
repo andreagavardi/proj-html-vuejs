@@ -12,22 +12,27 @@ var app = new Vue({
   data: {
     navbarLinks: [{
       linkName: 'home',
-      link: '#'
+      link: '#',
+      selected: true
     }, {
       linkName: 'about',
-      link: '#'
+      link: '#',
+      selected: false
     }, {
       linkName: 'services',
-      link: '#'
+      link: '#',
+      selected: false
     }, {
       linkName: 'work',
-      link: '#'
+      link: '#',
+      selected: false
     }, {
       linkName: 'articles',
       link: '#'
     }, {
       linkName: 'get quote',
-      link: '#'
+      link: '#',
+      selected: false
     }]
   },
   methods: {}
