@@ -47,3 +47,12 @@ body {
     color: white;
   }
 }
+h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2rem;
+}
+.row_col4 {
+  width: calc(100% / 4 - 1rem);
+}
