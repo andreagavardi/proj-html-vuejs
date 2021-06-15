@@ -6,12 +6,33 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  //font-family: "Work Sans", sans-serif;
 }
 .container {
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .container_sm {
   width: 60%;
   margin: 0 auto;
+}
+.d_flex {
+  display: flex;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.75rem 1.5rem;
+}
+.btn_dark {
+  background-color: $color_bgGrey;
+}
+.btn_yellow {
+  background-color: $primary_yellow;
+  color: $color_bgGrey;
 }

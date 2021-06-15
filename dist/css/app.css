@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap);
 * {
   box-sizing: border-box;
@@ -12,6 +13,9 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container_sm {
@@ -19,10 +23,31 @@ body {
   margin: 0 auto;
 }
 
-.navbar {
+.d_flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.75rem 1.5rem;
+}
+
+.btn_dark {
+  background-color: #31312f;
+}
+
+.btn_yellow {
+  background-color: #fed23f;
+  color: #31312f;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
   padding: 1rem;
 }
 .navbar .logo img {
@@ -43,6 +68,59 @@ body {
   padding: 0.5rem 1.5rem;
 }
 .navbar li:last-child a:hover {
-  background-color: #6b6868;
+  background-color: #31312f;
   color: white;
+}
+
+#jumbotron {
+  position: relative;
+  background-image: url(../img/home-slider-62528242.jpg);
+  height: 80vh;
+  background-size: cover;
+  margin-top: 6rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#jumbotron h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+}
+#jumbotron h3 {
+  color: #fed23f;
+  font-weight: 400;
+  margin: 3rem;
+}
+#jumbotron .jumbotron_links {
+  margin: 0.5rem;
+}
+#jumbotron .jumbotron_links .btn {
+  margin: 0.5rem;
+}
+#jumbotron .items {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+#jumbotron .items .item {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  background-color: white;
+  padding: 0.35rem;
+  border-radius: 5px;
+  font-size: 0.65rem;
+}
+#jumbotron .items .item i {
+  font-size: 1.25rem;
+  margin: 5px 0;
+  color: #31312f;
+}
+#jumbotron .items .item .price {
+  font-size: 1.5rem;
+  color: #65bc7b;
+  font-weight: 600;
+  font-family: "Work Sans", sans-serif;
 }
