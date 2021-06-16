@@ -139,6 +139,37 @@
                 </div>
                 <div class="shape_bottom"></div>
             </section>
+            <!--END section  statistics-->
+
+            <!-- section recent work -->
+            <section id="recent_work" class="d_flex">
+                <div class="main_text d_flex">
+                    <h2>
+                        explor recent work
+                    </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea architecto suscipit veniam sunt ducimus saepe adipisci autem voluptas mollitia.</p>
+                </div>
+                <div class="cards works container d_flex">
+                    <div class="work d_flex row_col3"v-for="work in recentWorks">
+                        <img :src="'./dist/img/'+ work.imgSrc" alt="immagine centro commerciale con davanti un parco">
+                        <div class="work_layover d_flex">
+                            <div class="icons">
+                                <i class="fas fa-link"></i>
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <h3>{{work.title}}</h3>
+                            <p>{{work.category}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="central_btn">
+                    <a href="#" class="btn">view all projects</a>
+                </div>
+
+            </section>
+            <!--END section recent work -->
+
+
 
 
     

@@ -54,6 +54,18 @@ h2 {
   font-size: 2rem;
   color: $color_bgGrey;
 }
+p {
+  line-height: 2rem;
+  text-align: center;
+  color: $color_Grey;
+}
+.row_col3 {
+  width: calc(100% / 3 - 2rem);
+}
 .row_col4 {
   width: calc(100% / 4 - 1rem);
+}
+.main_text {
+  justify-content: center;
+  width: 60%;
 }

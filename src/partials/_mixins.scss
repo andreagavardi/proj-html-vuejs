@@ -1,3 +1,22 @@
+@mixin layover {
+  opacity: 0;
+  @include flex_column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: $primary_yellow;
+  h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $color_bgGrey;
+  }
+  p {
+    margin: 2rem 0;
+  }
+}
 @mixin shape_top {
   .shape_top {
     position: relative;
@@ -19,7 +38,7 @@
   .shape_bottom {
     position: relative;
     overflow: hidden;
-    height: 80px;
+    height: 66px;
     &::after {
       content: "";
       border-radius: 100%;
@@ -31,4 +50,9 @@
       bottom: -200px;
     }
   }
+}
+
+@mixin flex_column {
+  flex-direction: column;
+  align-items: center;
 }

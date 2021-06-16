@@ -3,8 +3,6 @@
   flex-direction: column;
   align-items: center;
   .main_text {
-    justify-content: center;
-    width: 60%;
   }
   h2 {
     display: flex;
@@ -18,18 +16,13 @@
       border-bottom: 2px solid $primary_yellow;
     }
   }
-  p {
-    line-height: 2rem;
-    text-align: center;
-    color: $color_Grey;
-  }
+
   .cards {
     width: 100%;
     margin: 5rem 2rem;
     .card {
+      @include flex_column;
       position: relative;
-      flex-direction: column;
-      align-items: center;
       background-color: $section_color;
       margin: 0 1rem;
       padding: 2rem 1rem;
@@ -50,24 +43,9 @@
         transition: all 0.3s;
       }
       .card_layover {
-        opacity: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
+        @include layover;
         border-radius: 10px;
-        background-color: $primary_yellow;
-        h3 {
-          text-transform: uppercase;
-          font-weight: 400;
-          color: $color_bgGrey;
-        }
-        p {
-          margin: 2rem 0;
-        }
+
         .btn_yellow {
           background-color: $secondary_yellow;
           &:hover {

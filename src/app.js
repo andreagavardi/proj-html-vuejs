@@ -61,6 +61,23 @@
                 title:"19",
                 description:"internationals offices"
             }
+        ],
+        recentWorks:[
+            {
+                imgSrc:"project2-featured-15013609-800x800.jpg",
+                title:"florida heath facility",
+                category:"commercial"
+            },
+            {
+                imgSrc:"project1-featured-294276386-800x800.jpg",
+                title:"maine modernity",
+                category:"residential"
+            },
+            {
+                imgSrc:"project3-featured-189023420-800x800.jpg",
+                title:"exlusive urban living",
+                category:"commercial"
+            }
         ]
 
      },
