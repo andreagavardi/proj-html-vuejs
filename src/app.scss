@@ -115,13 +115,14 @@
   background-image: url(../img/home-parallax-144609983.jpg);
   background-size: cover;
   background-position-y: 35%;
-  height: 85vh;
+  height: 95vh;
+  @include flex_column;
   @include shape_top;
   @include shape_bottom;
   @include line_after;
 
   .shape_bottom {
-    top: 45%;
+    top: 15%;
   }
   .shape_top {
     &::before {
@@ -130,6 +131,7 @@
   }
   h2 {
     color: white;
+    margin-top: 5rem;
     &::after {
       left: 44%;
     }
@@ -138,11 +140,18 @@
     @include flex_column;
     color: white;
     width: 50%;
-    p {
-      color: white;
+    padding: 1rem 0;
+    img {
+      border-radius: 50%;
     }
-    h3 {
-      text-align: center;
+    .main_text {
+      p {
+        color: white;
+        margin: 1rem 0;
+      }
+      h3 {
+        text-align: center;
+      }
     }
   }
 }

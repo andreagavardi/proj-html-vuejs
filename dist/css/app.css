@@ -535,7 +535,9 @@ p {
   background-image: url(../img/home-parallax-144609983.jpg);
   background-size: cover;
   background-position-y: 35%;
-  height: 85vh;
+  height: 95vh;
+  flex-direction: column;
+  align-items: center;
 }
 #owner_slider .shape_top {
   position: relative;
@@ -578,13 +580,14 @@ p {
   margin: 1.5rem 0;
 }
 #owner_slider .shape_bottom {
-  top: 45%;
+  top: 15%;
 }
 #owner_slider .shape_top::before {
   background: #f5f5f5;
 }
 #owner_slider h2 {
   color: white;
+  margin-top: 5rem;
 }
 #owner_slider h2::after {
   left: 44%;
@@ -594,10 +597,15 @@ p {
   align-items: center;
   color: white;
   width: 50%;
+  padding: 1rem 0;
 }
-#owner_slider .slider p {
+#owner_slider .slider img {
+  border-radius: 50%;
+}
+#owner_slider .slider .main_text p {
   color: white;
+  margin: 1rem 0;
 }
-#owner_slider .slider h3 {
+#owner_slider .slider .main_text h3 {
   text-align: center;
 }
