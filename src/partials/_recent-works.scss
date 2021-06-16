@@ -4,19 +4,9 @@
   padding: 2rem 0;
   .main_text {
     @include flex_column;
+    @include line_after;
     margin: 3.5rem;
-    h2 {
-      &::after {
-        display: block;
-        content: "";
-        height: 2px;
-        width: 195px;
-        position: relative;
-        background-color: #fed23f;
-        left: 20%;
-        margin: 1.5rem 0;
-      }
-    }
+
     p {
       margin-top: 0.5rem;
     }

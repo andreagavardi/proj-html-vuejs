@@ -1,0 +1,77 @@
+//section Our Values
+#our_values {
+  @include flex_column;
+  @include line_after;
+  background-color: $section_color;
+  padding-top: 6rem;
+  .main_text {
+    width: 55%;
+  }
+  h2 {
+    &::after {
+      left: 40%;
+    }
+  }
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5rem 8rem;
+    .value {
+      @include flex_column;
+      padding: 1.5rem;
+      /*  margin: 1rem; */
+
+      &:nth-child(1) i {
+        background-color: #4ea4a5;
+      }
+      &:nth-child(2) i {
+        background-color: #6586b1;
+      }
+      &:nth-child(3) i {
+        background-color: #fe6f1d;
+      }
+      &:nth-child(4) i {
+        background-color: #65bc7b;
+      }
+      .icon {
+        text-align: center;
+
+        &:hover i {
+          background-color: $primary_yellow;
+        }
+        &:hover h3 {
+          color: $primary_yellow;
+        }
+      }
+      i {
+        font-size: 4rem;
+        color: white;
+        border-radius: 50%;
+        padding: 2rem 0rem;
+        text-align: center;
+        width: 1.85em;
+        height: 1.85em;
+        margin-bottom: 1rem;
+        transition: all 0.3s;
+      }
+      h3 {
+        font-size: 1.15rem;
+        text-transform: capitalize;
+        font-weight: 400;
+        color: $color_bgGrey;
+        &::after {
+          content: "";
+          display: block;
+          width: 25px;
+          position: relative;
+          left: 45%;
+          height: 2px;
+          background-color: #bcbcbc;
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}
