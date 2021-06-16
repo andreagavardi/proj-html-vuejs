@@ -596,7 +596,6 @@ p {
   flex-direction: column;
   align-items: center;
   color: white;
-  width: 50%;
   padding: 1rem 0;
 }
 #owner_slider .slider img {
@@ -605,6 +604,8 @@ p {
 #owner_slider .slider .main_text p {
   color: white;
   margin: 1rem 0;
+  font-size: 1.15rem;
+  font-style: italic;
 }
 #owner_slider .slider .main_text h3 {
   text-align: center;
