@@ -271,12 +271,12 @@ h2 {
   background-size: cover;
   background-position-y: center;
 }
-#statistics .shape {
+#statistics .shape_top {
   position: relative;
   overflow: hidden;
   height: 80px;
 }
-#statistics .shape::before {
+#statistics .shape_top::before {
   content: "";
   border-radius: 100%;
   position: absolute;
@@ -289,7 +289,6 @@ h2 {
 #statistics .shape_bottom {
   position: relative;
   overflow: hidden;
-  top: 45%;
   height: 80px;
 }
 #statistics .shape_bottom::after {
@@ -301,6 +300,9 @@ h2 {
   left: -200px;
   top: 0;
   bottom: -200px;
+}
+#statistics .shape_bottom {
+  top: 45%;
 }
 #statistics .data {
   position: relative;

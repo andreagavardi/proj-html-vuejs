@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap");
 @import "partials/variables";
 @import "partials/commons";
+@import "partials/mixins";
 @import "partials/jumbotron", "partials/section-specialists";
 
 .navbar {
@@ -75,37 +76,10 @@
   background-image: url(../img/home-244125289.jpg);
   background-size: cover;
   background-position-y: center;
-
-  .shape {
-    position: relative;
-    overflow: hidden;
-    height: 80px;
-    &::before {
-      content: "";
-      border-radius: 100%;
-      position: absolute;
-      background: white;
-      right: -200px;
-      left: -200px;
-      top: -200px;
-      bottom: 0;
-    }
-  }
+  @include shape_top;
+  @include shape_bottom;
   .shape_bottom {
-    position: relative;
-    overflow: hidden;
     top: 45%;
-    height: 80px;
-    &::after {
-      content: "";
-      border-radius: 100%;
-      position: absolute;
-      background: white;
-      right: -200px;
-      left: -200px;
-      top: 0;
-      bottom: -200px;
-    }
   }
   .data {
     position: relative;
