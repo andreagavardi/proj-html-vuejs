@@ -533,7 +533,9 @@ p {
 /* slider */
 #owner_slider {
   background-image: url(../img/home-parallax-144609983.jpg);
-  height: 80vh;
+  background-size: cover;
+  background-position-y: 35%;
+  height: 85vh;
 }
 #owner_slider .shape_top {
   position: relative;
@@ -586,4 +588,16 @@ p {
 }
 #owner_slider h2::after {
   left: 44%;
+}
+#owner_slider .slider {
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 50%;
+}
+#owner_slider .slider p {
+  color: white;
+}
+#owner_slider .slider h3 {
+  text-align: center;
 }
