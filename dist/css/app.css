@@ -58,6 +58,7 @@ h2 {
   text-align: center;
   font-weight: 400;
   font-size: 2rem;
+  color: #31312f;
 }
 
 .row_col4 {
@@ -76,17 +77,18 @@ h2 {
 }
 #jumbotron h1 {
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: "Work Sans", sans-serif;
   color: white;
 }
 #jumbotron h3 {
+  font-size: 1.5rem;
   color: #fed23f;
   font-weight: 400;
-  margin: 3rem;
+  margin: 2rem;
 }
 #jumbotron .jumbotron_links {
-  margin: 0.5rem;
+  margin: 1rem;
 }
 #jumbotron .jumbotron_links .btn {
   margin: 0.5rem;
@@ -125,6 +127,7 @@ h2 {
   background-color: white;
   width: 100%;
   padding: 2rem 0;
+  box-shadow: 0px 0px 20px 0px #00000087;
 }
 .navbar .logo img {
   width: 190px;
@@ -166,6 +169,12 @@ h2 {
   font-size: 2rem;
   color: #31312f;
 }
+.banner_yellow .btn_dark {
+  padding: 0.6rem 1.75rem;
+}
+.banner_yellow .btn_dark:hover {
+  background-color: white;
+}
 .banner_yellow a {
   position: absolute;
   text-align: center;
@@ -185,13 +194,13 @@ h2 {
   width: 60%;
 }
 #specialists h2 {
-  color: #31312f;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #specialists h2 hr {
   margin-top: 20px;
+  margin-bottom: 30px;
   width: 215px;
   border: none;
   border-bottom: 2px solid #fed23f;
@@ -199,12 +208,58 @@ h2 {
 #specialists p {
   line-height: 2rem;
   text-align: center;
-  margin-top: 30px;
+  color: #666665;
 }
 #specialists .cards {
   width: 100%;
+  margin: 5rem 2rem;
 }
 #specialists .cards .card {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
   background-color: #f5f5f5;
   margin: 0 1rem;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+}
+#specialists .cards .card i {
+  font-size: 1.5rem;
+  border: 1px solid #666665;
+  border-radius: 50%;
+  padding: 1rem;
+  color: #666665;
+}
+#specialists .cards .card h2 {
+  margin: 1rem 0;
+}
+#specialists .cards .card:hover .card_layover {
+  opacity: 1;
+  transition: all 0.3s;
+}
+#specialists .cards .card .card_layover {
+  opacity: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fed23f;
+}
+#specialists .cards .card .card_layover h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #31312f;
+}
+#specialists .cards .card .card_layover p {
+  margin: 2rem 0;
+}
+#specialists .cards .card .card_layover .btn_yellow {
+  background-color: #ffe07b;
+}
+#specialists .cards .card .card_layover .btn_yellow:hover {
+  background-color: #31312f;
 }
