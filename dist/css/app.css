@@ -1,6 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap);
-/* fonts */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -208,6 +207,114 @@ p {
   background-color: #31312f;
 }
 
+/* recent work */
+#recent_work {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+#recent_work .main_text {
+  flex-direction: column;
+  align-items: center;
+  margin: 3.5rem;
+}
+#recent_work .main_text h2::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 195px;
+  position: relative;
+  background-color: #fed23f;
+  left: 20%;
+  margin: 1.5rem 0;
+}
+#recent_work .main_text p {
+  margin-top: 0.5rem;
+}
+#recent_work .cards {
+  flex-wrap: wrap;
+  padding: 0 5rem;
+  margin-bottom: 4rem;
+}
+#recent_work .cards .work {
+  position: relative;
+  margin: 1rem;
+}
+#recent_work .cards .work img {
+  max-width: 100%;
+}
+#recent_work .cards .work:hover .work_layover {
+  opacity: 1;
+  height: 100%;
+  transition: all 0.35s;
+}
+#recent_work .cards .work .work_layover {
+  opacity: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fed23f;
+  height: 0;
+  opacity: 0;
+}
+#recent_work .cards .work .work_layover h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #31312f;
+}
+#recent_work .cards .work .work_layover p {
+  margin: 2rem 0;
+}
+#recent_work .cards .work .work_layover .icons i {
+  color: #fed23f;
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 1rem 0.25rem;
+  font-size: 1.25rem;
+}
+#recent_work .cards .work .work_layover h3,
+#recent_work .cards .work .work_layover p {
+  color: white;
+  margin: 0;
+  text-transform: capitalize;
+}
+#recent_work .cards .work .work_layover p {
+  font-size: 0.85rem;
+}
+#recent_work #central_btn {
+  margin-bottom: 3rem;
+}
+#recent_work #central_btn::after, #recent_work #central_btn::before {
+  position: relative;
+  margin: 0 1.5rem;
+  display: inline-block;
+  content: "";
+  height: 2px;
+  background-color: #f5f5f5;
+  width: 380px;
+}
+#recent_work #central_btn::before {
+  bottom: 1.45rem;
+}
+#recent_work #central_btn::after {
+  bottom: 0.25rem;
+}
+#recent_work .btn {
+  color: #31312f;
+  padding: 0.75rem 7rem;
+  transition: all 0.3s;
+}
+#recent_work .btn:hover {
+  background-color: #fed23f;
+  color: white;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -336,113 +443,5 @@ p {
 }
 #statistics .data .data_number span {
   text-transform: uppercase;
-  color: white;
-}
-
-/* recent work */
-#recent_work {
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 0;
-}
-#recent_work .main_text {
-  flex-direction: column;
-  align-items: center;
-  margin: 3.5rem;
-}
-#recent_work .main_text h2::after {
-  display: block;
-  content: "";
-  height: 2px;
-  width: 195px;
-  position: relative;
-  background-color: #fed23f;
-  left: 20%;
-  margin: 1.5rem 0;
-}
-#recent_work .main_text p {
-  margin-top: 0.5rem;
-}
-#recent_work .cards {
-  flex-wrap: wrap;
-  padding: 0 5rem;
-  margin-bottom: 4rem;
-}
-#recent_work .cards .work {
-  position: relative;
-  margin: 1rem;
-}
-#recent_work .cards .work img {
-  max-width: 100%;
-}
-#recent_work .cards .work:hover .work_layover {
-  opacity: 1;
-  height: 100%;
-  transition: all 0.35s;
-}
-#recent_work .cards .work .work_layover {
-  opacity: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #fed23f;
-  height: 0;
-  opacity: 0;
-}
-#recent_work .cards .work .work_layover h3 {
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #31312f;
-}
-#recent_work .cards .work .work_layover p {
-  margin: 2rem 0;
-}
-#recent_work .cards .work .work_layover .icons i {
-  color: #fed23f;
-  background-color: white;
-  border-radius: 50%;
-  padding: 1rem;
-  margin: 1rem 0.25rem;
-  font-size: 1.25rem;
-}
-#recent_work .cards .work .work_layover h3,
-#recent_work .cards .work .work_layover p {
-  color: white;
-  margin: 0;
-  text-transform: capitalize;
-}
-#recent_work .cards .work .work_layover p {
-  font-size: 0.85rem;
-}
-#recent_work #central_btn {
-  margin-bottom: 3rem;
-}
-#recent_work #central_btn::after, #recent_work #central_btn::before {
-  position: relative;
-  margin: 0 1.5rem;
-  display: inline-block;
-  content: "";
-  height: 2px;
-  background-color: #f5f5f5;
-  width: 380px;
-}
-#recent_work #central_btn::before {
-  bottom: 1.45rem;
-}
-#recent_work #central_btn::after {
-  bottom: 0.25rem;
-}
-#recent_work .btn {
-  color: #31312f;
-  padding: 0.75rem 7rem;
-  transition: all 0.3s;
-}
-#recent_work .btn:hover {
-  background-color: #fed23f;
   color: white;
 }

@@ -1,0 +1,94 @@
+/* recent work */
+#recent_work {
+  @include flex_column;
+  padding: 2rem 0;
+  .main_text {
+    @include flex_column;
+    margin: 3.5rem;
+    h2 {
+      &::after {
+        display: block;
+        content: "";
+        height: 2px;
+        width: 195px;
+        position: relative;
+        background-color: #fed23f;
+        left: 20%;
+        margin: 1.5rem 0;
+      }
+    }
+    p {
+      margin-top: 0.5rem;
+    }
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    padding: 0 5rem;
+    margin-bottom: 4rem;
+    .work {
+      position: relative;
+      margin: 1rem;
+      img {
+        max-width: 100%;
+      }
+      &:hover .work_layover {
+        opacity: 1;
+        height: 100%;
+        transition: all 0.35s;
+      }
+      .work_layover {
+        @include layover;
+        height: 0;
+        opacity: 0;
+        .icons i {
+          color: #fed23f;
+          background-color: white;
+          border-radius: 50%;
+          padding: 1rem;
+          margin: 1rem 0.25rem;
+          font-size: 1.25rem;
+        }
+        h3,
+        p {
+          color: white;
+          margin: 0;
+          text-transform: capitalize;
+        }
+        p {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+
+  #central_btn {
+    margin-bottom: 3rem;
+    &::after,
+    &::before {
+      position: relative;
+      margin: 0 1.5rem;
+      display: inline-block;
+      content: "";
+      height: 2px;
+      background-color: $section_color;
+      width: 380px;
+    }
+    &::before {
+      bottom: 1.45rem;
+    }
+    &::after {
+      bottom: 0.25rem;
+    }
+  }
+
+  .btn {
+    color: $color_bgGrey;
+    padding: 0.75rem 7rem;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $primary_yellow;
+      color: white;
+    }
+  }
+}
