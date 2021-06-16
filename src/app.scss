@@ -109,3 +109,26 @@
     }
   }
 }
+
+/* slider */
+#owner_slider {
+  background-image: url(../img/home-parallax-144609983.jpg);
+  height: 80vh;
+  @include shape_top;
+  @include shape_bottom;
+  @include line_after;
+  .shape_bottom {
+    top: 45%;
+  }
+  .shape_top {
+    &::before {
+      background: $section_color;
+    }
+  }
+  h2 {
+    color: white;
+    &::after {
+      left: 44%;
+    }
+  }
+}
