@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap);
+/* fonts */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -120,72 +121,8 @@ h2 {
   font-family: "Work Sans", sans-serif;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  background-color: white;
-  width: 100%;
-  padding: 2rem 0;
-  box-shadow: 0px 0px 20px 0px #00000087;
-}
-.navbar .logo img {
-  width: 190px;
-}
-.navbar li {
-  display: inline-block;
-  margin-left: 2rem;
-  text-transform: uppercase;
-}
-.navbar li a {
-  text-decoration: none;
-  color: #666665;
-}
-.navbar li a.active, .navbar li a:hover {
-  color: #fed23f;
-}
-.navbar li:last-child a {
-  background-color: #fed23f;
-  padding: 0.5rem 1.5rem;
-}
-.navbar li:last-child a:hover {
-  background-color: #31312f;
-  color: white;
-}
-
-/* Banner Yellow */
-.banner_yellow {
-  background-color: #fed23f;
-  height: 150px;
-  width: 100%;
-  position: relative;
-}
-.banner_yellow h2 {
-  text-align: center;
-  text-transform: capitalize;
-  font-weight: 400;
-  line-height: 150px;
-  vertical-align: middle;
-  font-size: 2rem;
-  color: #31312f;
-}
-.banner_yellow .btn_dark {
-  padding: 0.6rem 1.75rem;
-}
-.banner_yellow .btn_dark:hover {
-  background-color: white;
-}
-.banner_yellow a {
-  position: absolute;
-  text-align: center;
-  bottom: -20px;
-  left: 43%;
-  border: 2px solid;
-}
-
-/* section Specialists */
 #specialists {
-  padding: 8rem 0;
+  padding-top: 8rem;
   flex-direction: column;
   align-items: center;
 }
@@ -262,4 +199,133 @@ h2 {
 }
 #specialists .cards .card .card_layover .btn_yellow:hover {
   background-color: #31312f;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+  padding: 2rem 0;
+  box-shadow: 0px 0px 20px 0px #00000087;
+}
+.navbar .logo img {
+  width: 190px;
+}
+.navbar li {
+  display: inline-block;
+  margin-left: 2rem;
+  text-transform: uppercase;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #666665;
+}
+.navbar li a.active, .navbar li a:hover {
+  color: #fed23f;
+}
+.navbar li:last-child a {
+  background-color: #fed23f;
+  padding: 0.5rem 1.5rem;
+}
+.navbar li:last-child a:hover {
+  background-color: #31312f;
+  color: white;
+}
+
+/* Banner Yellow */
+.banner_yellow {
+  background-color: #fed23f;
+  height: 150px;
+  width: 100%;
+  position: relative;
+}
+.banner_yellow h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 150px;
+  vertical-align: middle;
+  font-size: 2rem;
+  color: #31312f;
+}
+.banner_yellow .btn_dark {
+  padding: 0.6rem 1.75rem;
+}
+.banner_yellow .btn_dark:hover {
+  background-color: white;
+}
+.banner_yellow a {
+  position: absolute;
+  text-align: center;
+  bottom: -20px;
+  left: 43%;
+  border: 2px solid;
+}
+
+/* section statistics */
+#statistics {
+  height: 80vh;
+  background-image: url(../img/home-244125289.jpg);
+  background-size: cover;
+  background-position-y: center;
+}
+#statistics .shape {
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+#statistics .shape::before {
+  content: "";
+  border-radius: 100%;
+  position: absolute;
+  background: white;
+  right: -200px;
+  left: -200px;
+  top: -200px;
+  bottom: 0;
+}
+#statistics .shape_bottom {
+  position: relative;
+  overflow: hidden;
+  top: 45%;
+  height: 80px;
+}
+#statistics .shape_bottom::after {
+  content: "";
+  border-radius: 100%;
+  position: absolute;
+  background: white;
+  right: -200px;
+  left: -200px;
+  top: 0;
+  bottom: -200px;
+}
+#statistics .data {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 30%;
+  padding: 0 6rem;
+}
+#statistics .data .data_number {
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+}
+#statistics .data .data_number i {
+  color: #fed23f;
+  font-size: 4.5rem;
+}
+#statistics .data .data_number h2 {
+  color: yellow;
+  font-weight: 400;
+  font-size: 3.5rem;
+  font-family: "Work Sans", sans-serif;
+  padding: 0.5rem 0;
+}
+#statistics .data .data_number span {
+  text-transform: uppercase;
+  color: white;
 }

@@ -121,7 +121,24 @@
                 </div>
 
             </section>
+            
             <!--END Section Specialists -->
+
+            <!-- section  statistics-->
+            <section id="statistics">
+                <div class="shape"></div>
+                <div class="data container">
+
+                    <!-- dati dinamici presi da app.js 'statistics' -->
+                    <div v-for="data in statistics"class="data_number row_col4 d_flex">
+                        <i :class="[data.icon, data.iconType]"></i>
+                        <h2>{{data.title}}</h2>
+                        <span>{{data.description}}</span>
+                    </div>
+                   
+                </div>
+                <div class="shape_bottom"></div>
+            </section>
 
 
     
