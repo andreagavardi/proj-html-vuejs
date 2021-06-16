@@ -67,6 +67,15 @@ var app = new Vue({
       imgSrc: "project3-featured-189023420-800x800.jpg",
       title: "exlusive urban living",
       category: "commercial"
+    }],
+    homeOwners: [{
+      src: "",
+      ownerName: "",
+      comment: ""
+    }, {
+      src: "",
+      ownerName: "",
+      comment: ""
     }]
   },
   methods: {}

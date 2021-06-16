@@ -116,13 +116,14 @@
   background-size: cover;
   background-position-y: 35%;
   height: 95vh;
+  position: relative;
   @include flex_column;
   @include shape_top;
   @include shape_bottom;
   @include line_after;
 
   .shape_bottom {
-    top: 15%;
+    top: 8%;
   }
   .shape_top {
     &::before {
@@ -146,12 +147,19 @@
     .main_text {
       p {
         color: white;
-        margin: 1rem 0;
+        margin: 1.25rem 0;
         font-size: 1.15rem;
         font-style: italic;
       }
       h3 {
         text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+      }
+    }
+    .circles {
+      .fa-circle {
+        font-size: 0.75rem;
       }
     }
   }

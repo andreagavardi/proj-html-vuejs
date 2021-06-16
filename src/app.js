@@ -78,6 +78,18 @@
                 title:"exlusive urban living",
                 category:"commercial"
             }
+        ],
+        homeOwners:[
+            {
+                src:"",
+                ownerName:"",
+                comment:""
+            },
+            {
+                src:"",
+                ownerName:"",
+                comment:""
+            }
         ]
 
      },
