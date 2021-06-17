@@ -848,6 +848,9 @@ p {
 #owner_slider .slider .circles .fa-circle {
   font-size: 0.75rem;
 }
+#owner_slider .slider .circles i {
+  margin: 0 0.25rem;
+}
 
 /* parntners */
 #partners {
