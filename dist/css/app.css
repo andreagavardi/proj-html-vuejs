@@ -847,11 +847,13 @@ p {
   text-align: left;
 }
 #site_footer .main_content a:not(a.btn, a#external_link) {
+  display: block;
   text-decoration: none;
   color: #fed23f;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 #site_footer .main_content a#external_link {
   color: #5ea3e7;
@@ -878,4 +880,18 @@ p {
   text-align: left;
   color: white;
   line-height: 1rem;
+}
+#site_footer .main_content .row_col4 .contact i {
+  padding-top: 0.35rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: #666665;
+}
+#site_footer .main_content .row_col4 .contact .details {
+  flex-direction: column;
+}
+#site_footer .main_content .row_col4 .contact .details span {
+  color: #666665;
+  font-size: 0.9rem;
+  line-height: 1.25rem;
 }

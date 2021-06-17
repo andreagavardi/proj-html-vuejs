@@ -261,11 +261,13 @@
       text-align: left;
     }
     a:not(a.btn, a#external_link) {
+      display: block;
       text-decoration: none;
       color: $primary_yellow;
       text-transform: uppercase;
       font-weight: 600;
       font-size: 1.25rem;
+      margin-bottom: 1.5rem;
     }
     a#external_link {
       color: #5ea3e7;
@@ -293,6 +295,23 @@
         text-align: left;
         color: white;
         line-height: 1rem;
+      }
+
+      .contact {
+        i {
+          padding-top: 0.35rem;
+          margin-right: 1rem;
+          font-size: 1rem;
+          color: $color_Grey;
+        }
+        .details {
+          flex-direction: column;
+          span {
+            color: $color_Grey;
+            font-size: 0.9rem;
+            line-height: 1.25rem;
+          }
+        }
       }
     }
   }
