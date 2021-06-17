@@ -270,8 +270,9 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nostrum esse harum, id consequatur quidem possimus? Minus sit autem pariatur?</p>
                 </div>
                 <div class="partner_list">
-                    <div class="partner">
-                        <img src="" alt="">
+                    <div class="partner" v-for="logo in partnersLogo">
+                        <img :src="'./dist/img/'+logo" alt="">
+                        <!--  -->
                     </div>
                 </div>
             </section>
