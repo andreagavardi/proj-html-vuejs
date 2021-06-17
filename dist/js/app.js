@@ -78,7 +78,7 @@ var app = new Vue({
       comment: ""
     }],
     latestNews: [{
-      img: "",
+      img: "134132600-800x482.jpg",
       title: "Redeveloping Florida's remore southern coast",
       date: "december 7th, 2015",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum asperiores, id, maxime earum nisi minima commodi quidem blanditiis rerum facere nihil magnam reprehenderit! Magni voluptates culpa aut deserunt atque.",
@@ -86,15 +86,15 @@ var app = new Vue({
     }, {
       img: "",
       title: "",
-      date: "",
+      date: "december 7th, 2015",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum asperiores, id, maxime earum nisi minima commodi quidem blanditiis rerum facere nihil magnam reprehenderit! Magni voluptates culpa aut deserunt atque.",
-      category: ""
+      category: "Architecture, buildings, construcion, news"
     }, {
       img: "",
       title: "",
-      date: "",
+      date: "december 7th, 2015",
       description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum asperiores, id, maxime earum nisi minima commodi quidem blanditiis rerum facere nihil magnam reprehenderit! Magni voluptates culpa aut deserunt atque.",
-      category: ""
+      category: "Architecture, buildings, construcion, news"
     }]
   },
   methods: {}

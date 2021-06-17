@@ -238,22 +238,22 @@
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eveniet expedita modi quasi illum totam vel molestiae aperiam obcaecati quisquam?</p>
                </div>
                <div class="cards news container">
-                   <div class="new row_col3">
+                   <div class="card row_col3" v-for="notizia in latestNews">
                        <div class="card_top">
                            <div class="img_layover d_flex">
                             <div class="icons">
                                 <i class="fas fa-link"></i>
                                 <i class="fas fa-search"></i>
                             </div>
-                            <h3>Redeveloping Florida's remore southern coast</h3>
-                            <span>descriptiom</span>
+                            <h3>{{notizia.title}}</h3>
+                            <span>{{notizia.category}}</span>
                            </div>
-                           <img src="./dist/img/blog-post-134132600-800x482.jpg" alt="">
+                           <img :src="'./dist/img/blog-post-'+ notizia.img" alt="">
                        </div>
                        <div class="description">
-                           <h3>Redeveloping Florida's remore southern coast</h3>
-                           <span>december 7th, 2015</span>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum asperiores, id, maxime earum nisi minima commodi quidem blanditiis rerum facere nihil magnam reprehenderit! Magni voluptates culpa aut deserunt atque.</p>
+                           <h3>{{notizia.title}}</h3>
+                           <span>{{notizia.date}}</span>
+                           <p>{{notizia.description}}</p>
                        </div>
                    </div>
                </div>
