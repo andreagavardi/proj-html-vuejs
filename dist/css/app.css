@@ -895,6 +895,9 @@ p {
 #site_footer .main_content .row_col4 .contact .details {
   flex-direction: column;
 }
+#site_footer .main_content .row_col4 .contact .details .info {
+  text-transform: capitalize;
+}
 #site_footer .main_content .row_col4 .contact .details span {
   color: #666665;
   font-size: 0.9rem;

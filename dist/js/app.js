@@ -98,11 +98,11 @@ var app = new Vue({
     }],
     partnersLogo: ["home-logo1-219096700-320x202.png", "home-logo2-219096700-320x202.png", "home-logo9-219096700-320x202.png", "home-logo10-219096700-320x202.png", "home-logo11-219096700-320x202.png"],
     tweets: [{
-      logo: "",
-      author: "",
-      linkAuthor: "",
-      tweet: "",
-      tweetImg: ""
+      logo: "3a74ce3d0532b7773b174c45ca3bd05a_normal.png",
+      author: "ThemFusion",
+      linkAuthor: "@theme fusion",
+      tweet: "We have surpassed the 700K milestone on Themeforest. A HUGE thank you to our passionate team & the entire #Avada community for your support, input, & loyalty. The best is still to come! Vote & have your say on what comes next <a id='external_link' href='#'>https://bit.ly/2HS7Dsa</a>  #WebsiteBuilder #ThankYou",
+      tweetImg: "En2TRxLW4AEiWUN.jpeg"
     }],
     contacts: [{
       title: "corporate location",

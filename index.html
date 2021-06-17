@@ -313,23 +313,23 @@
                         <div class="row_col4">
                             <a href="#">latest tweet</a>
                             <!-- contenuto dinamico VueJs -->
-                            <div class="tweet_top d_flex">
-                                <div class="logo">
-                                    <img src="./dist/img/3a74ce3d0532b7773b174c45ca3bd05a_normal.png" alt="">
+                            <div class="post"v-for="tweet in tweets">
+                                <div class="tweet_top d_flex" >
+                                    <div class="logo">
+                                        <img :src="'./dist/img/'+ tweet.logo" alt="">
+                                    </div>
+                                    <div class="tweet_title">
+                                        <div class="author">{{tweet.author}}</div>
+                                        <div class="tweet_link">{{tweet.linkAuthor}}</div>
+                                    </div>
+                                    
                                 </div>
-                                <div class="tweet_title">
-                                    <div class="author">thee fusion</div>
-                                    <div class="tweet_link">@theme fusion</div>
+                                <div class="tweet">
+                                    <p>{{tweet.tweet}}</p>
                                 </div>
-                                
-                            </div>
-                            <div class="tweet">
-                                <p>We have surpassed the 700K milestone on Themeforest. A HUGE thank you to our passionate team & the entire #Avada
-                                community for your support, input, & loyalty. The best is still to come! Vote & have your say on what comes next
-                                <a id="external_link" href="#">https://bit.ly/2HS7Dsa</a>  #WebsiteBuilder #ThankYou</p>
-                            </div>
-                            <div class="tweet_img">
-                                <img src="" alt="">
+                                <div class="tweet_img">
+                                    <img :src="'./dist/img/'+tweet.tweetImg" alt="">
+                                </div>
                             </div>
                         </div>
                         <!--END latest tweet -->

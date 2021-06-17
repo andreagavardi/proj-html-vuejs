@@ -309,6 +309,9 @@
         }
         .details {
           flex-direction: column;
+          .info {
+            text-transform: capitalize;
+          }
           span {
             color: $color_Grey;
             font-size: 0.9rem;
