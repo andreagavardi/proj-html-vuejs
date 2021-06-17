@@ -247,6 +247,7 @@
 /* site footer */
 
 #site_footer {
+  font-family: $font_work;
   background-color: #3f3f3f;
   padding-top: 1rem;
   .main_content {
@@ -259,6 +260,7 @@
     p {
       margin: 2.5rem 0;
       text-align: left;
+      font-size: 1rem;
     }
     a:not(a.btn, a#external_link) {
       display: block;
@@ -298,6 +300,7 @@
       }
 
       .contact {
+        margin-bottom: 1rem;
         i {
           padding-top: 0.35rem;
           margin-right: 1rem;

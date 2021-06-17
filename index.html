@@ -340,37 +340,16 @@
                             <div class="contacts">
 
                                 <!-- contenuto dinamico VueJs -->
-                                <div class="contact d_flex">
-                                    <i class="fas fa-globe fa-lg fa-fw"></i>
+                                <div class="contact d_flex" v-for="contact in contacts">
+                                    <i :class="[contact.iconType, contact.icon]"></i>
                                     <div class="details d_flex">
                                         <span class="info">
-                                            Corporate Location
+                                            {{contact.title}}
                                         </span>
                                          <span>
-                                            1600 Amphitheatre Parkway
-                                            London WC1 1BA
+                                            {{contact.details}}
                                         </span>
                                     </div>
-                                </div>
-                                <div class="contact">
-                                    <i></i>
-                                    <span class="info"></span>
-                                </div>
-                                <div class="contact">
-                                    <i></i>
-                                    <span class="info"></span>
-                                </div>
-                                <div class="contact">
-                                    <i></i>
-                                    <span class="info"></span>
-                                </div>
-                                <div class="contact">
-                                    <i></i>
-                                    <span class="info"></span>
-                                </div>
-                                <div class="contact">
-                                    <i></i>
-                                    <span class="info"></span>
                                 </div>
                             </div>
                         </div>

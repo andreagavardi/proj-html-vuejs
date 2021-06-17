@@ -832,6 +832,7 @@ p {
 
 /* site footer */
 #site_footer {
+  font-family: "Work Sans", sans-serif;
   background-color: #3f3f3f;
   padding-top: 1rem;
 }
@@ -845,6 +846,7 @@ p {
 #site_footer .main_content p {
   margin: 2.5rem 0;
   text-align: left;
+  font-size: 1rem;
 }
 #site_footer .main_content a:not(a.btn, a#external_link) {
   display: block;
@@ -880,6 +882,9 @@ p {
   text-align: left;
   color: white;
   line-height: 1rem;
+}
+#site_footer .main_content .row_col4 .contact {
+  margin-bottom: 1rem;
 }
 #site_footer .main_content .row_col4 .contact i {
   padding-top: 0.35rem;

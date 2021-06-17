@@ -120,6 +120,43 @@
             "home-logo9-219096700-320x202.png",
             "home-logo10-219096700-320x202.png",
             "home-logo11-219096700-320x202.png"
+        ],
+        contacts:[
+            {
+                title:"corporate location",
+                iconType:"fas",
+                icon:"fa-globe",
+                details:"1600 Amphitheatre Parkway London WC1 1BA"
+            },
+            {   title:"residential location",
+                iconType:"fas",
+                icon:"fa-home",
+                details:"9521 Broadsberry Avenue Paddington RC7 9ZA"
+            },
+            {
+                title:"",
+                iconType:"fas",
+                icon:"fa-phone",
+                details:"1.800.458.556 / 1.800.532.2112"
+            },
+            {
+                title:"",
+                iconType:"fas",
+                icon:"fa-phone",
+                details:"info@your-domain.com"
+            },
+            {
+                title:"",
+                iconType:"far",
+                icon:"fa-clock",
+                details:"Monday – Friday: 9:00 AM – 6:00 PM"
+            },
+            {
+                title:"",
+                iconType:"far",
+                icon:"fa-clock",
+                details:"Saturday – Sunday: 9:00 AM – 12:00 PM"
+            }
         ]
 
      },
