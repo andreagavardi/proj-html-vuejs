@@ -47,6 +47,35 @@ body {
     color: white;
   }
 }
+#central_btn {
+  margin-bottom: 3rem;
+  &::after,
+  &::before {
+    position: relative;
+    margin: 0 1.5rem;
+    display: inline-block;
+    content: "";
+    height: 2px;
+    background-color: white;
+    width: 380px;
+  }
+  &::before {
+    bottom: 1.45rem;
+  }
+  &::after {
+    bottom: 0.25rem;
+  }
+  .btn {
+    color: $color_bgGrey;
+    padding: 0.75rem 7rem;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $primary_yellow;
+      color: white;
+    }
+  }
+}
+
 h2 {
   text-transform: capitalize;
   text-align: center;

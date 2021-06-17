@@ -53,22 +53,9 @@
   }
 
   #central_btn {
-    margin-bottom: 3rem;
     &::after,
     &::before {
-      position: relative;
-      margin: 0 1.5rem;
-      display: inline-block;
-      content: "";
-      height: 2px;
       background-color: $section_color;
-      width: 380px;
-    }
-    &::before {
-      bottom: 1.45rem;
-    }
-    &::after {
-      bottom: 0.25rem;
     }
     .btn {
       color: $color_bgGrey;
