@@ -4,7 +4,8 @@
 @import "partials/commons";
 @import "partials/mixins";
 @import "partials/jumbotron", "partials/section-specialists",
-  "partials/recent-works", "partials/our-value", "partials/latest-news";
+  "partials/recent-works", "partials/our-value", "partials/latest-news",
+  "partials/site-footer";
 
 .navbar {
   position: fixed;
@@ -240,120 +241,6 @@
       display: block;
       margin-top: 1rem;
       text-align: center;
-    }
-  }
-}
-
-/* site footer */
-
-#site_footer {
-  font-family: $font_work;
-  background-color: #3f3f3f;
-  padding-top: 1rem;
-  .main_content {
-    background-color: #1e1e1e;
-    padding: 4rem 0;
-    .row.container {
-      align-items: unset;
-    }
-
-    p {
-      margin: 2.5rem 0;
-      text-align: left;
-      font-size: 1rem;
-    }
-    a:not(a.btn, a#external_link) {
-      display: block;
-      text-decoration: none;
-      color: $primary_yellow;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-    a#external_link {
-      color: #5ea3e7;
-    }
-    .row_col4 {
-      margin: 0 1rem;
-
-      .tweet_top {
-        color: white;
-
-        .logo img {
-          width: 30px;
-          border-radius: 50%;
-          margin-right: 0.5rem;
-        }
-        .tweet_title {
-          font-size: 0.8rem;
-          .author {
-            font-weight: 600;
-          }
-        }
-      }
-      .tweet p {
-        font-size: 0.8rem;
-        text-align: left;
-        color: white;
-        line-height: 1rem;
-      }
-      .tweet_img {
-        img {
-          max-width: 100%;
-        }
-      }
-
-      .contact {
-        margin-bottom: 1rem;
-        i {
-          padding-top: 0.35rem;
-          margin-right: 1rem;
-          font-size: 1rem;
-          color: $color_Grey;
-        }
-        .details {
-          flex-direction: column;
-          .info {
-            text-transform: capitalize;
-          }
-          span {
-            color: $color_Grey;
-            font-size: 0.9rem;
-            line-height: 1.25rem;
-          }
-        }
-      }
-
-      .map {
-        img {
-          max-width: 100%;
-        }
-      }
-    }
-  }
-  .footer_bottom {
-    background-color: #111111;
-    justify-content: space-between;
-    padding: 1.5rem 0;
-    .copyright {
-      color: $color_Grey;
-      font-size: 0.8rem;
-      a {
-        color: #bcbcbc;
-        text-decoration: none;
-        &:hover {
-          color: $primary_yellow;
-        }
-      }
-    }
-    .socials {
-      a {
-        color: #bcbcbc;
-        i {
-          margin: 0 0.8rem;
-        }
-      }
     }
   }
 }
