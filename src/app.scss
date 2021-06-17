@@ -167,3 +167,17 @@
     }
   }
 }
+
+/* parntners */
+#partners {
+  @include flex_column;
+  @include line_after;
+  padding: 5rem 0;
+  .main_text {
+    h2 {
+      &::after {
+        left: 39%;
+      }
+    }
+  }
+}
