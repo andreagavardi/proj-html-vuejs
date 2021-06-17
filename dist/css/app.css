@@ -883,6 +883,9 @@ p {
   color: white;
   line-height: 1rem;
 }
+#site_footer .main_content .row_col4 .tweet_img img {
+  max-width: 100%;
+}
 #site_footer .main_content .row_col4 .contact {
   margin-bottom: 1rem;
 }

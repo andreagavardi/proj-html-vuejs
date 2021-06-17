@@ -126,7 +126,7 @@
                logo:"3a74ce3d0532b7773b174c45ca3bd05a_normal.png",
                 author:"ThemFusion",
                 linkAuthor:"@theme fusion",
-                tweet:"We have surpassed the 700K milestone on Themeforest. A HUGE thank you to our passionate team & the entire #Avada community for your support, input, & loyalty. The best is still to come! Vote & have your say on what comes next <a id='external_link' href='#'>https://bit.ly/2HS7Dsa</a>  #WebsiteBuilder #ThankYou",
+                tweet:"We have surpassed the 700K milestone on Themeforest. A HUGE thank you to our passionate team & the entire #Avada community for your support, input, & loyalty. The best is still to come! Vote & have your say on what comes next https://bit.ly/2HS7Dsa#WebsiteBuilder #ThankYou",
                 tweetImg:"En2TRxLW4AEiWUN.jpeg"
             }
         ],
