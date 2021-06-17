@@ -70,15 +70,14 @@
     &::after {
       bottom: 0.25rem;
     }
-  }
-
-  .btn {
-    color: $color_bgGrey;
-    padding: 0.75rem 7rem;
-    transition: all 0.3s;
-    &:hover {
-      background-color: $primary_yellow;
-      color: white;
+    .btn {
+      color: $color_bgGrey;
+      padding: 0.75rem 7rem;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $primary_yellow;
+        color: white;
+      }
     }
   }
 }

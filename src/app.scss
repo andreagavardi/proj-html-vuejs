@@ -119,12 +119,15 @@
   position: relative;
   @include flex_column;
   @include shape_top;
-  @include shape_bottom;
   @include line_after;
-
+  @include shape_bottom;
   .shape_bottom {
     top: 8%;
+    &::after {
+      background-color: $section_color;
+    }
   }
+
   .shape_top {
     &::before {
       background: $section_color;
@@ -160,6 +163,118 @@
     .circles {
       .fa-circle {
         font-size: 0.75rem;
+      }
+    }
+  }
+}
+
+/* latest news */
+#latest_news {
+  @include flex_column;
+  @include line_after;
+  padding: 5rem 0;
+  background-color: $section_color;
+
+  h2 {
+    &::after {
+      left: 39%;
+    }
+  }
+  .cards.container {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+    margin-bottom: 4rem;
+
+    .new {
+      margin: 1rem;
+      background-color: white;
+
+      .card_top {
+        position: relative;
+        &:hover .img_layover {
+          opacity: 1;
+        }
+        .img_layover {
+          @include layover;
+          padding: 1.5rem;
+          .icons {
+            font-size: 1.25rem;
+            color: $primary_yellow;
+            i {
+              background-color: white;
+              border-radius: 50%;
+              padding: 1rem;
+              margin: 0 0.25rem;
+            }
+          }
+          h3 {
+            text-transform: capitalize;
+            text-align: center;
+            color: white;
+            margin: 1rem 0;
+          }
+          span {
+            color: white;
+            font-size: 0.8rem;
+            font-weight: 600;
+          }
+        }
+        & > img {
+          max-width: 100%;
+        }
+      }
+      .description {
+        padding: 1rem;
+        h3.span,
+        p {
+          text-align: left;
+        }
+        h3 {
+          text-transform: uppercase;
+          font-weight: 400;
+          color: $color_bgGrey;
+          line-height: 2rem;
+        }
+        span {
+          display: block;
+          font-size: 0.8rem;
+          color: $color_Grey;
+          text-transform: capitalize;
+          padding-bottom: 1rem;
+        }
+        p {
+          padding-top: 1rem;
+          border-top: 2px solid $section_color;
+        }
+      }
+    }
+  }
+  #central_btn {
+    margin-bottom: 3rem;
+    &::after,
+    &::before {
+      position: relative;
+      margin: 0 1.5rem;
+      display: inline-block;
+      content: "";
+      height: 2px;
+      background-color: white;
+      width: 380px;
+    }
+    &::before {
+      bottom: 1.45rem;
+    }
+    &::after {
+      bottom: 0.25rem;
+    }
+    .btn {
+      color: $color_bgGrey;
+      padding: 0.75rem 7rem;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $primary_yellow;
+        color: white;
       }
     }
   }
