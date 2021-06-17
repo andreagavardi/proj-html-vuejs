@@ -90,6 +90,29 @@
                 ownerName:"",
                 comment:""
             }
+        ],
+        latestNews:[
+            {
+                img:"",
+                title:"Redeveloping Florida's remore southern coast",
+                date:"december 7th, 2015",
+                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum asperiores, id, maxime earum nisi minima commodi quidem blanditiis rerum facere nihil magnam reprehenderit! Magni voluptates culpa aut deserunt atque.",
+                category:"Architecture, buildings, construcion, news"
+            },
+            {
+                img:"",
+                title:"",
+                date:"",
+                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum asperiores, id, maxime earum nisi minima commodi quidem blanditiis rerum facere nihil magnam reprehenderit! Magni voluptates culpa aut deserunt atque.",
+                category:""
+            },
+            {
+                img:"",
+                title:"",
+                date:"",
+                description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorum asperiores, id, maxime earum nisi minima commodi quidem blanditiis rerum facere nihil magnam reprehenderit! Magni voluptates culpa aut deserunt atque.",
+                category:""
+            }
         ]
 
      },
