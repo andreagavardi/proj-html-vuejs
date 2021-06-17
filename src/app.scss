@@ -182,11 +182,10 @@
   }
   .partner_list {
     width: 80%;
-    padding: 0 3rem;
+    padding: 2rem 3rem;
     .partner {
       width: calc(100% / 5 - 2rem);
       margin: 0 1rem;
-      padding: 0.5rem;
       img {
         max-width: 100%;
       }
@@ -212,6 +211,7 @@
   .col_left {
     @include line_after;
     width: 70%;
+    padding-right: 1rem;
     h2,
     span {
       text-align: left;
@@ -240,6 +240,21 @@
       display: block;
       margin-top: 1rem;
       text-align: center;
+    }
+  }
+}
+
+/* site footer */
+
+#site_footer {
+  background-color: #3f3f3f;
+  padding-top: 1rem;
+  .main_content {
+    background-color: #1e1e1e;
+    padding: 4rem 0;
+    p {
+      margin: 2.5rem 0;
+      text-align: left;
     }
   }
 }

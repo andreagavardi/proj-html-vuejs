@@ -90,6 +90,7 @@ h2 {
 }
 
 p {
+  font-size: 0.9rem;
   line-height: 2rem;
   text-align: center;
   color: #666665;
@@ -763,12 +764,11 @@ p {
 }
 #partners .partner_list {
   width: 80%;
-  padding: 0 3rem;
+  padding: 2rem 3rem;
 }
 #partners .partner_list .partner {
   width: calc(100% / 5 - 2rem);
   margin: 0 1rem;
-  padding: 0.5rem;
 }
 #partners .partner_list .partner img {
   max-width: 100%;
@@ -790,6 +790,7 @@ p {
 }
 #jumbo_bottom .col_left {
   width: 70%;
+  padding-right: 1rem;
 }
 #jumbo_bottom .col_left h2::after {
   display: block;
@@ -827,4 +828,18 @@ p {
   display: block;
   margin-top: 1rem;
   text-align: center;
+}
+
+/* site footer */
+#site_footer {
+  background-color: #3f3f3f;
+  padding-top: 1rem;
+}
+#site_footer .main_content {
+  background-color: #1e1e1e;
+  padding: 4rem 0;
+}
+#site_footer .main_content p {
+  margin: 2.5rem 0;
+  text-align: left;
 }
