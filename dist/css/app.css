@@ -903,3 +903,25 @@ p {
 #site_footer .main_content .row_col4 .map img {
   max-width: 100%;
 }
+#site_footer .footer_bottom {
+  background-color: #111111;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+#site_footer .footer_bottom .copyright {
+  color: #666665;
+  font-size: 0.8rem;
+}
+#site_footer .footer_bottom .copyright a {
+  color: #bcbcbc;
+  text-decoration: none;
+}
+#site_footer .footer_bottom .copyright a:hover {
+  color: #fed23f;
+}
+#site_footer .footer_bottom .socials {
+  color: #bcbcbc;
+}
+#site_footer .footer_bottom .socials i {
+  margin: 0 0.8rem;
+}

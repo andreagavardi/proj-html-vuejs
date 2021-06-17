@@ -324,4 +324,26 @@
       }
     }
   }
+  .footer_bottom {
+    background-color: #111111;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    .copyright {
+      color: $color_Grey;
+      font-size: 0.8rem;
+      a {
+        color: #bcbcbc;
+        text-decoration: none;
+        &:hover {
+          color: $primary_yellow;
+        }
+      }
+    }
+    .socials {
+      color: #bcbcbc;
+      i {
+        margin: 0 0.8rem;
+      }
+    }
+  }
 }
