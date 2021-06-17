@@ -775,9 +775,56 @@ p {
 }
 
 /* jumbo_bottom */
+#jumbo_bottom {
+  height: 54vh;
+  background-image: url(../img/about-call-to-action-57862405.jpg);
+  background-size: cover;
+  background-position-y: 70%;
+}
+#jumbo_bottom .main_content {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 75%;
+  height: 100%;
+  align-items: center;
+}
 #jumbo_bottom .col_left {
   width: 70%;
 }
+#jumbo_bottom .col_left h2::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 195px;
+  position: relative;
+  background-color: #fed23f;
+  left: 20%;
+  margin: 1.5rem 0;
+}
+#jumbo_bottom .col_left h2,
+#jumbo_bottom .col_left span {
+  text-align: left;
+  color: white;
+}
+#jumbo_bottom .col_left h2::after {
+  left: 0;
+}
+#jumbo_bottom .col_left span {
+  font-size: 1.25rem;
+}
 #jumbo_bottom .col_right {
+  flex-direction: column;
+  align-items: center;
   width: 30%;
+  text-align: right;
+}
+#jumbo_bottom .col_right .btn {
+  letter-spacing: 2px;
+  padding: 1rem 3rem;
+}
+#jumbo_bottom .col_right span {
+  color: white;
+  display: block;
+  margin-top: 1rem;
+  text-align: center;
 }
