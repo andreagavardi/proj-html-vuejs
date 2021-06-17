@@ -97,6 +97,13 @@ var app = new Vue({
       category: "Architecture, buildings, construcion, news"
     }],
     partnersLogo: ["home-logo1-219096700-320x202.png", "home-logo2-219096700-320x202.png", "home-logo9-219096700-320x202.png", "home-logo10-219096700-320x202.png", "home-logo11-219096700-320x202.png"],
+    tweets: [{
+      logo: "",
+      author: "",
+      linkAuthor: "",
+      tweet: "",
+      tweetImg: ""
+    }],
     contacts: [{
       title: "corporate location",
       iconType: "fas",

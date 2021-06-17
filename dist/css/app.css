@@ -919,9 +919,9 @@ p {
 #site_footer .footer_bottom .copyright a:hover {
   color: #fed23f;
 }
-#site_footer .footer_bottom .socials {
+#site_footer .footer_bottom .socials a {
   color: #bcbcbc;
 }
-#site_footer .footer_bottom .socials i {
+#site_footer .footer_bottom .socials a i {
   margin: 0 0.8rem;
 }
