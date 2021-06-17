@@ -183,8 +183,9 @@
   .cards.container {
     justify-content: center;
     flex-wrap: wrap;
-    padding: 0 5rem;
+    padding: 1rem 5rem;
     margin-bottom: 4rem;
+    align-items: unset;
 
     .card {
       margin: 1rem;
@@ -235,6 +236,9 @@
           font-weight: 400;
           color: $color_bgGrey;
           line-height: 2rem;
+          &:hover {
+            color: $primary_yellow;
+          }
         }
         span {
           display: block;
