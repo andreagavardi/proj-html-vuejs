@@ -252,9 +252,48 @@
   .main_content {
     background-color: #1e1e1e;
     padding: 4rem 0;
+    .row.container {
+      align-items: unset;
+    }
+
     p {
       margin: 2.5rem 0;
       text-align: left;
+    }
+    a:not(a.btn, a#external_link) {
+      text-decoration: none;
+      color: $primary_yellow;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+    a#external_link {
+      color: #5ea3e7;
+    }
+    .row_col4 {
+      margin: 0 1rem;
+
+      .tweet_top {
+        color: white;
+
+        .logo img {
+          width: 30px;
+          border-radius: 50%;
+          margin-right: 0.5rem;
+        }
+        .tweet_title {
+          font-size: 0.8rem;
+          .author {
+            font-weight: 600;
+          }
+        }
+      }
+      .tweet p {
+        font-size: 0.8rem;
+        text-align: left;
+        color: white;
+        line-height: 1rem;
+      }
     }
   }
 }

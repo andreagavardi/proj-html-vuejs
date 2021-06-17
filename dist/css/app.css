@@ -839,7 +839,43 @@ p {
   background-color: #1e1e1e;
   padding: 4rem 0;
 }
+#site_footer .main_content .row.container {
+  align-items: unset;
+}
 #site_footer .main_content p {
   margin: 2.5rem 0;
   text-align: left;
+}
+#site_footer .main_content a:not(a.btn, a#external_link) {
+  text-decoration: none;
+  color: #fed23f;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+#site_footer .main_content a#external_link {
+  color: #5ea3e7;
+}
+#site_footer .main_content .row_col4 {
+  margin: 0 1rem;
+}
+#site_footer .main_content .row_col4 .tweet_top {
+  color: white;
+}
+#site_footer .main_content .row_col4 .tweet_top .logo img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+#site_footer .main_content .row_col4 .tweet_top .tweet_title {
+  font-size: 0.8rem;
+}
+#site_footer .main_content .row_col4 .tweet_top .tweet_title .author {
+  font-weight: 600;
+}
+#site_footer .main_content .row_col4 .tweet p {
+  font-size: 0.8rem;
+  text-align: left;
+  color: white;
+  line-height: 1rem;
 }
