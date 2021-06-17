@@ -79,16 +79,17 @@
                 category:"commercial"
             }
         ],
+        counter:0,
         homeOwners:[
             {
-                src:"",
-                ownerName:"",
-                comment:""
+                src:"home-testimonial-113165296.jpg",
+                ownerName:"Pippo",
+                comment:"&quot Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus ullam possimus repellendus aut reprehenderit odio velit nemo pariatur perspiciatis. &quot"
             },
             {
-                src:"",
-                ownerName:"",
-                comment:""
+                src:"home-testimonial-84268399.jpg",
+                ownerName:"Pluto",
+                comment:"&quot Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus ullam possimus repellendus aut reprehenderit odio velit nemo pariatur perspiciatis. &quot"
             }
         ],
         latestNews:[
@@ -169,5 +170,9 @@
         ]
 
      },
-    methods:{ } 
+    methods:{
+        selectUser(index){
+           return this.counter = index
+       }
+     } 
 }) 

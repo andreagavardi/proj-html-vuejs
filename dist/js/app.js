@@ -68,14 +68,15 @@ var app = new Vue({
       title: "exlusive urban living",
       category: "commercial"
     }],
+    counter: 0,
     homeOwners: [{
-      src: "",
-      ownerName: "",
-      comment: ""
+      src: "home-testimonial-113165296.jpg",
+      ownerName: "Pippo",
+      comment: "&quot Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus ullam possimus repellendus aut reprehenderit odio velit nemo pariatur perspiciatis. &quot"
     }, {
-      src: "",
-      ownerName: "",
-      comment: ""
+      src: "home-testimonial-84268399.jpg",
+      ownerName: "Pluto",
+      comment: "&quot Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus ullam possimus repellendus aut reprehenderit odio velit nemo pariatur perspiciatis. &quot"
     }],
     latestNews: [{
       img: "134132600-800x482.jpg",
@@ -136,7 +137,11 @@ var app = new Vue({
       details: "Saturday – Sunday: 9:00 AM – 12:00 PM"
     }]
   },
-  methods: {}
+  methods: {
+    selectUser: function selectUser(index) {
+      return this.counter = index;
+    }
+  }
 });
 
 /***/ }),
