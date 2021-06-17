@@ -773,3 +773,11 @@ p {
 #partners .partner_list .partner img {
   max-width: 100%;
 }
+
+/* jumbo_bottom */
+#jumbo_bottom .col_left {
+  width: 70%;
+}
+#jumbo_bottom .col_right {
+  width: 30%;
+}
