@@ -761,3 +761,15 @@ p {
 #partners .main_text h2::after {
   left: 39%;
 }
+#partners .partner_list {
+  width: 80%;
+  padding: 0 3rem;
+}
+#partners .partner_list .partner {
+  width: calc(100% / 5 - 2rem);
+  margin: 0 1rem;
+  padding: 0.5rem;
+}
+#partners .partner_list .partner img {
+  max-width: 100%;
+}
