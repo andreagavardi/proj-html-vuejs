@@ -900,3 +900,6 @@ p {
   font-size: 0.9rem;
   line-height: 1.25rem;
 }
+#site_footer .main_content .row_col4 .map img {
+  max-width: 100%;
+}
