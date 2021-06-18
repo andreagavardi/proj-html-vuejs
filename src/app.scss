@@ -13,7 +13,7 @@
   z-index: 100;
   background-color: white;
   width: 100%;
-  padding: 2rem 0;
+  padding: 1rem 0;
   box-shadow: 0px 0px 20px 0px #00000087;
   .logo img {
     width: 190px;
@@ -74,21 +74,21 @@
 
 /* section statistics */
 #statistics {
-  height: 80vh;
+  /* height: 85vh; */
   background-image: url(../img/home-244125289.jpg);
   background-size: cover;
   background-position-y: center;
   @include shape_top;
   @include shape_bottom;
   .shape_bottom {
-    top: 45%;
+    top: 35%;
   }
   .data {
     position: relative;
     justify-content: center;
     align-items: center;
     top: 30%;
-    padding: 0 6rem;
+    padding: 5rem;
     .data_number {
       @include flex_column;
       margin: 1rem;
@@ -116,14 +116,14 @@
   background-image: url(../img/home-parallax-144609983.jpg);
   background-size: cover;
   background-position-y: 35%;
-  height: 95vh;
+  /* height: 109vh; */
   position: relative;
   @include flex_column;
   @include shape_top;
   @include line_after;
   @include shape_bottom;
   .shape_bottom {
-    top: 8%;
+    top: -16%;
     &::after {
       background-color: $section_color;
     }
@@ -136,7 +136,7 @@
   }
   h2 {
     color: white;
-    margin-top: 5rem;
+    margin-top: 3rem;
     &::after {
       left: 44%;
     }
@@ -145,6 +145,7 @@
     @include flex_column;
     color: white;
     padding: 1rem 0;
+
     img {
       border-radius: 50%;
     }
