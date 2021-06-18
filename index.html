@@ -150,7 +150,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea architecto suscipit veniam sunt ducimus saepe adipisci autem voluptas mollitia.</p>
                 </div>
                 <div class="cards works container d_flex">
-                    <div class="work d_flex row_col3"v-for="work in recentWorks">
+                    <div class="work d_flex row_col3"v-for="(work,index) in recentWorks" v-if="index < 3">
                         <img :src="'./dist/img/'+ work.imgSrc" alt="immagine centro commerciale con davanti un parco">
                         <div class="work_layover d_flex">
                             <div class="icons">
@@ -238,7 +238,7 @@
                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt eveniet expedita modi quasi illum totam vel molestiae aperiam obcaecati quisquam?</p>
                </div>
                <div class="cards news container">
-                   <div class="card row_col3" v-for="notizia in latestNews">
+                   <div class="card row_col3" v-for="(notizia,index) in latestNews" v-if="index < 3">
                        <div class="card_top">
                            <div class="img_layover d_flex">
                             <div class="icons">
@@ -313,7 +313,7 @@
                         <div class="row_col4">
                             <a href="#">latest tweet</a>
                             <!-- contenuto dinamico VueJs -->
-                            <div class="post"v-for="tweet in tweets">
+                            <div class="post"v-for="(tweet,index) in tweets" v-if="index == 0">
                                 <div class="tweet_top d_flex" >
                                     <div class="logo">
                                         <img :src="'./dist/img/'+ tweet.logo" alt="">
