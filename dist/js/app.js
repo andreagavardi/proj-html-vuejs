@@ -140,7 +140,17 @@ var app = new Vue({
   methods: {
     selectUser: function selectUser(index) {
       return this.counter = index;
+    },
+    next: function next() {
+      if (this.counter == this.homeOwners.length - 1) {
+        return this.counter = 0;
+      }
+
+      return this.counter += 1;
     }
+  },
+  mounted: function mounted() {
+    setInterval(this.next, 3000);
   }
 });
 

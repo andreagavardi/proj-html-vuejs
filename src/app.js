@@ -173,6 +173,18 @@
     methods:{
         selectUser(index){
            return this.counter = index
-       }
-     } 
-}) 
+       },
+
+        next(){
+            
+            if(this.counter == this.homeOwners.length - 1){
+                return this.counter = 0;
+            }
+            return this.counter +=1;
+        },
+    },
+    mounted(){
+        setInterval(this.next,3000);
+
+    } 
+ }); 
