@@ -83,12 +83,12 @@
         homeOwners:[
             {
                 src:"home-testimonial-113165296.jpg",
-                ownerName:"Pippo",
+                ownerName:"Nadia",
                 comment:"&quot Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus ullam possimus repellendus aut reprehenderit odio velit nemo pariatur perspiciatis. &quot"
             },
             {
                 src:"home-testimonial-84268399.jpg",
-                ownerName:"Pluto",
+                ownerName:"Jhon",
                 comment:"&quot Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatibus ullam possimus repellendus aut reprehenderit odio velit nemo pariatur perspiciatis. &quot"
             }
         ],
